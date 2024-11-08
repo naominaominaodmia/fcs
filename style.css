@@ -1,0 +1,123 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+    
+    /* Body Style */
+    body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f0f8ff;
+    color: #333;
+    }
+    
+    /* Header Style */
+    header {
+    background-color: #2e478b;
+    color: #fff;
+    padding: 15px 0;
+    text-align: center;
+    }
+
+    header h1 {
+        margin-right: 85px;
+    }
+
+    
+    header nav ul {
+    list-style-type: none;
+    padding: 0;
+    
+    }
+    
+    header nav ul li {
+    display: inline;
+    margin: 0 10px;
+    }
+    
+    header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    }
+    
+    /* Section Styles */
+    section {
+    padding: 20px;
+    margin: 20px 0;
+    }
+    
+    section#about, section#mission, section#programs, section#contact {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+    }
+    
+    section#mission, section#contact, section#programs, section#about h1{
+        text-align: center;
+    }
+
+
+/* funny yellow box things*/
+    section#mission {
+        display: flex;
+    }
+    section#mission div {
+        width: 500px;
+        height: 275px;
+        background-color: rgb(255, 255, 138);
+        margin: auto;
+        border-radius: 25px;
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+
+    }
+    section#mission div p {
+        font: 22.5px "Arial";
+        margin: 20px 25px;
+    }
+    section#mission div h1 {
+        margin: 20px 0 0;
+        font: 1000 35px "Arial";
+    }
+
+    /* programs */
+    section#programs {
+        display: block;
+    }
+    section#programs div {
+        margin: auto;
+
+    }
+
+    section#programs p {
+        width: 500px;
+        margin: auto;
+    }
+
+    section#programs img {
+        width: 150px;
+        height: 150px;
+        float: right;
+        margin-left: 10px;
+    }
+
+    /* Footer Style */
+    footer {
+    background-color: #2e478b;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    }
+
+    /* img */
+header img {
+    height: 50px;    
+    width: 50px;
+    margin-left: 35px;
+    float: left;
+}
+    
