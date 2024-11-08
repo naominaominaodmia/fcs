@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faith Christian School - Login</title>
+    <style>
+        /* Basic reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body and html setup */
+        body, html {
+            height: 100%;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Main container for the background and content */
+        .main-container {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            background-color: #e3f2fd; /* Light blue background */
+        }
+
+        /* Header section styling */
+        .header {
+            background-color: #1976d2;
+            padding: 10px;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 20px;
+        }
+
+        .header img {
+            height: 50px;
+        }
+
+        .header h1 {
+            font-size: 24px;
+        }
+
+        .header .nav-links {
+            display: flex;
+            gap: 20px;
+        }
+
+        .header .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        .header .nav-links a:hover {
+            text-decoration: underline;
+        }
+
+        /* Login form container styling */
+        .login-container {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-image: url('https://scontent.xx.fbcdn.net/v/t1.15752-9/462538290_519390594418574_6473154116944315869_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=0024fc&_nc_eui2=AeG04fqn_kA2PYt_x_5fYrpb8AnvbiLiZk3wCe9uIuJmTWHrUA_cV3GQu8ERqjmu5tm7wHwpKY_hUusjQOUa4Rwy&_nc_ohc=9Vl7jISYq6kQ7kNvgGf0yWV&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.xx&oh=03_Q7cD1QEDUvs91qFAOstgno75Hgn7f7iWHaqBrhxAnOwNfAqIhw&oe=6753F182');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .login-box {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 30px;
+            border-radius: 10px;
+            width: 300px;
+            text-align: center;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            border: 2px solid #0d47a1;
+        }
+
+        .login-box h2 {
+            margin-bottom: 20px;
+            color: #0d47a1;
+            font-family: 'Arial Black', sans-serif;
+        }
+
+        .login-box input[type="text"],
+        .login-box input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .login-box input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #1976d2;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .login-box input[type="submit"]:hover {
+            background-color: #1565c0;
+        }
+
+        .login-box a {
+            display: block;
+            margin-top: 10px;
+            color: #1976d2;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .login-box a:hover {
+            text-decoration: underline;
+        }
+
+        /* Footer styling */
+        .footer {
+            background-color: #1976d2;
+            padding: 10px;
+            text-align: center;
+            color: white;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Main container -->
+    <div class="main-container">
+        
+        <!-- Header section -->
+        <div class="header">
+            <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/462569543_1602526297062089_5074158245376856344_n.png?_nc_cat=101&ccb=1-7&_nc_sid=0024fc&_nc_eui2=AeEke5bE2AntukNGxT7p6qCQobn694VcLvChufr3hVwu8Bsnn9iyCZoqo4xpkdBT_i1cSSXlqVY1IqKfKJlHR4rg&_nc_ohc=42NPa-31IusQ7kNvgF6bC5r&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.xx&oh=03_Q7cD1QGKBXPBsD9wrE2ZhewDTmhVPvIENHvDrQb2KU4Ka0cP0w&oe=6753CF3B" alt="School Logo">
+            <h1>Faith Christian School</h1>
+            <div class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <a href="login.html">Login</a>
+                <a href="programs.html">Programs</a>
+                <a href="admissions.html">Admissions</a>
+                <a href="aboutus.html">About Us</a>
+            </div>
+        </div>
+        
+        <!-- Login form container -->
+        <div class="login-container">
+            <div class="login-box">
+                <h2>Log in</h2>
+                <form action="login.php" method="POST">
+                    <input type="text" name="username" placeholder="Username" required>
+                    <input type="password" name="password" placeholder="Password" required>
+                    <input type="submit" value="Login">
+                    <a href="#forgot-password">Forgot Password?</a>
+                </form>
+            </div>
+        </div>
+
+        <!-- Footer section -->
+        <div class="footer">
+            &copy; 2024 Faith Christian School. All rights reserved.
+        </div>
+    </div>
+</body>
+</html>
