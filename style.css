@@ -1,123 +1,136 @@
-/* Basic Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+
+div {
+    padding: 40px 20px;
+        max-width: 800px;
+        margin: 20px auto;
+        background-color: white;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        border-top: 4px solid #1976d2;
+        justify-content: center;
+        align-items: center;
+
+}
+
+body {
+font-family: Arial, sans-serif;
+}
+
+header {
+        background-color: #1976d2;
+        color: white;
+        padding: 20px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
-    
-    /* Body Style */
-    body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f0f8ff;
-    color: #333;
+
+    .header-top {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 0%;
     }
-    
-    /* Header Style */
-    header {
-    background-color: #2e478b;
-    color: #fff;
-    padding: 15px 0;
-    text-align: center;
+
+    header img {
+        height: 60px;
+        margin-right: 15px;
+        align-self: flex-start;
+        float: left;
     }
 
     header h1 {
-        margin-right: 85px;
+        font-size: 24px;
     }
 
-    
-    header nav ul {
-    list-style-type: none;
-    padding: 0;
-    
-    }
-    
-    header nav ul li {
-    display: inline;
-    margin: 0 10px;
-    }
-    
-    header nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    }
-    
-    /* Section Styles */
-    section {
-    padding: 20px;
-    margin: 20px 0;
-    }
-    
-    section#about, section#mission, section#programs, section#contact {
-    background-color: #fff;
-    border-radius: 5px;
-    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
-    }
-    
-    section#mission, section#contact, section#programs, section#about h1{
-        text-align: center;
-    }
-
-
-/* funny yellow box things*/
-    section#mission {
+    header li {
         display: flex;
     }
-    section#mission div {
-        width: 500px;
-        height: 275px;
-        background-color: rgb(255, 255, 138);
-        margin: auto;
-        border-radius: 25px;
-        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
 
-    }
-    section#mission div p {
-        font: 22.5px "Arial";
-        margin: 20px 25px;
-    }
-    section#mission div h1 {
-        margin: 20px 0 0;
-        font: 1000 35px "Arial";
+    header ul {
+        display: flex;
     }
 
-    /* programs */
-    section#programs {
-        display: block;
-    }
-    section#programs div {
-        margin: auto;
 
+    nav {
+        margin-top: 10px;
     }
 
-    section#programs p {
-        width: 500px;
-        margin: auto;
+    nav a {
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+        margin: 0 20px;
     }
 
-    section#programs img {
-        width: 150px;
-        height: 150px;
-        float: right;
-        margin-left: 10px;
+    nav a.active {
+        color: yellow;
     }
 
-    /* Footer Style */
-    footer {
-    background-color: #2e478b;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+    header img {
+        float: left;
     }
-
-    /* img */
-header img {
-    height: 50px;    
-    width: 50px;
-    margin-left: 35px;
-    float: left;
-}
     
+    .department-box img {
+        float: right;
+        width: 220px;
+        height: 220px;
+    }
+
+/* admissions.html */
+    .content {
+        padding: 40px 20px;
+        max-width: 800px;
+        margin: auto;
+        background-color: white;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        border-top: 4px solid #1976d2;
+    }
+
+    .content h2 {
+        color: #1976d2;
+        font-family: 'Arial Black', sans-serif;
+        margin-bottom: 20px;
+    }
+
+    .content h3 {
+        color: #0d47a1;
+        margin-top: 20px;
+    }
+
+    .content p, .content ul {
+        font-size: 16px;
+        line-height: 1.6;
+        color: #333;
+        margin-bottom: 15px;
+    }
+
+    .content ul {
+        padding-left: 20px;
+    }
+
+    .content ul li {
+        list-style-type: decimal;
+        margin-bottom: 5px;
+    }
+
+    /* Admission Boxes */
+        .admission-box {
+            padding: 20px;
+            margin-top: 20px;
+            border: 2px solid #1976d2;
+            border-radius: 8px;
+            background-color: #f1f8ff;
+        }
+
+        /* Footer */
+        .footer {
+            background-color: #1976d2;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            font-size: 14px;
+            margin-top: 40px;
+        }
